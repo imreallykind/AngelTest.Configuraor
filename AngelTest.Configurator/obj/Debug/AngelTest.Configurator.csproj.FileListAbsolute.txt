@@ -52,3 +52,4 @@ C:\Users\dimae\Documents\GitHub\AngelTest.Configuraor\AngelTest.Configurator\obj
 C:\Users\dimae\Documents\GitHub\AngelTest.Configuraor\AngelTest.Configurator\obj\Debug\AngelTest.Configurator.csproj.CopyComplete
 C:\Users\dimae\Documents\GitHub\AngelTest.Configuraor\AngelTest.Configurator\obj\Debug\AngelTest.Configurator.exe
 C:\Users\dimae\Documents\GitHub\AngelTest.Configuraor\AngelTest.Configurator\obj\Debug\AngelTest.Configurator.pdb
+C:\Users\dimae\Documents\GitHub\AngelTest.Configuraor\AngelTest.Configurator\obj\Debug\App.baml

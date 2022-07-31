@@ -12,28 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using MahApps.Metro.Controls;
 
-namespace AngelTest.Configurator
+namespace AngelTest.Configurator.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для UsersPg.xaml
     /// </summary>
-    public partial class MainWindow : MetroWindow
+    public partial class UsersPg : Page
     {
-        public MainWindow()
+        public UsersPg()
         {
             InitializeComponent();
-        }
-
-        private void UsersButton_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void SettingsButton_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
