@@ -13,7 +13,7 @@
             HorizontalTitleAlignment="Center"
             x:Name="AddTile"
             Controls:ControlsHelper.MouseOverBorderBrush="{DynamicResource MahApps.Brushes.ThemeForeground}"
-            Click="AddTile_Click" 
+            Command="{Binding AddTile_Click}"
             HorizontalAlignment="Left">
             <Controls:FontIcon FontSize="55" FontFamily ="Segoe MDL2 Assets" Glyph="&#xE710;" />
         </Controls:Tile>

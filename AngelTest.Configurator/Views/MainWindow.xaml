@@ -25,6 +25,6 @@
             Margin="148,139,504,139" >
             <Controls:FontIcon FontSize="55" FontFamily ="Segoe MDL2 Assets" Glyph="&#xE713;" />
         </Controls:Tile>
-        <Frame x:Name="MainFr"/>
+        <Frame Content="{Binding CurrentPage}" NavigationUIVisibility="Hidden"/>
     </Grid>
 </Controls:MetroWindow>
