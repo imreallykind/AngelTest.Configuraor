@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\dimae\Documents\GitHub\AngelTest.Configuraor\AngelTest.Configurator\App.xaml
-3-704439884
+4-1974659832
 
-92089607473
+16-366980301
 14371147665
-Views\MainWindow.xaml;Views\UserAdd.xaml;Views\UsersPg.xaml;
+Views\HomeView.xaml;MainWindow.xaml;Views\UserAdd.xaml;Views\UsersView.xaml;
 
-True
+False
 

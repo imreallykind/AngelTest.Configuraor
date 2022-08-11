@@ -1,4 +1,5 @@
-﻿using GalaSoft.MvvmLight;
+﻿using AngelTest.Configurator.Stores;
+using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using System;
 using System.Collections.Generic;
@@ -10,15 +11,19 @@ using System.Windows.Input;
 
 namespace AngelTest.Configurator.ViewsModels
 {
-    class MainViewModel : ViewModelBase
+    public class MainViewModel : ViewModelBase
     {
-        private Page UsersAdd;
-        private Page UsersPg;
-        private Page MainWindow;
-
-        public MainViewModel()
+        private readonly NavigationStore _navigationStore;
+        public ViewModelBase CurrentViewModel => _navigationStore.CurrentViewModel;
+        public MainViewModel(NavigationStore navigationStore)
         {
-            MainWindow = new Pages.MainWindow();
+            _navigationStore = navigationStore;
+            _navigationStore.CurrentViewModelChanged += OnCurrentViewModelChanged;
+        }
+
+        private void OnCurrentViewModelChanged()
+        {
+            OnPropertyChanged(nameof(CurrentViewModel));
         }
     }
 }

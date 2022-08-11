@@ -12,9 +12,11 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using AngelTest.Configurator.Stores;
+using AngelTest.Configurator.ViewsModels;
 using MahApps.Metro.Controls;
 
-namespace AngelTest.Configurator.Views
+namespace AngelTest.Configurator
 {
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
@@ -23,7 +25,10 @@ namespace AngelTest.Configurator.Views
     {
         public MainWindow()
         {
+            NavigationStore navigationStore = new NavigationStore();
+            navigationStore.CurrentViewModel = new HomeViewModel(navigationStore);
             InitializeComponent();
+            DataContext = new MainViewModel(navigationStore);
         }
     }
 }

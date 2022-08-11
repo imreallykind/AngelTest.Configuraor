@@ -19,16 +19,13 @@ namespace AngelTest.Configurator.Views
     /// <summary>
     /// Логика взаимодействия для UsersPg.xaml
     /// </summary
-    public partial class UsersPg : MetroWindow
+    public partial class UsersPg 
     {
         public UsersPg()
         {
             InitializeComponent();
         }
 
-        private void AddTile_Click(object sender, RoutedEventArgs e)
-        {
 
-        }
     }
 }
