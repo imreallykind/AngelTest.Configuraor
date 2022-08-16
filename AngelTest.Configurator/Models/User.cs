@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using System.Collections.ObjectModel;
 
 namespace AngelTest.Configurator.Models
 {
@@ -14,9 +15,15 @@ namespace AngelTest.Configurator.Models
         private string _login;
         private string _password;
 
+
         public int Id
         {
             get { return _id; }
+            set
+            {
+                _id = value;
+                OnPropertyChanged("User");
+            }
         }
         public string Login
         {
@@ -40,8 +47,7 @@ namespace AngelTest.Configurator.Models
         public event PropertyChangedEventHandler PropertyChanged;
         public void OnPropertyChanged([CallerMemberName] string prop = "")
         {
-            if (PropertyChanged != null)
-                PropertyChanged(this, new PropertyChangedEventArgs(prop));
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(prop));
         }
     }
 }

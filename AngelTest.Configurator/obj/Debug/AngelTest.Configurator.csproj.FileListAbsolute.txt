@@ -71,3 +71,5 @@ C:\Users\dimae\Documents\GitHub\AngelTest.Configuraor\AngelTest.Configurator\obj
 C:\Users\dimae\Documents\GitHub\AngelTest.Configuraor\AngelTest.Configurator\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\dimae\Documents\GitHub\AngelTest.Configuraor\AngelTest.Configurator\obj\Debug\Views\UsersView.g.cs
 C:\Users\dimae\Documents\GitHub\AngelTest.Configuraor\AngelTest.Configurator\obj\Debug\Views\UsersView.baml
+C:\Users\dimae\Documents\GitHub\AngelTest.Configuraor\AngelTest.Configurator\obj\Debug\Views\UserInfoView.g.cs
+C:\Users\dimae\Documents\GitHub\AngelTest.Configuraor\AngelTest.Configurator\obj\Debug\Views\UserInfoView.baml

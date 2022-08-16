@@ -130,9 +130,11 @@
     </ApplicationDefinition>
     <Compile Include="Commands\CommandBase.cs" />
     <Compile Include="Commands\NavigateCommand.cs" />
+    <Compile Include="Commands\NavigateUser.cs" />
     <Compile Include="Stores\NavigationStore.cs" />
     <Compile Include="ViewsModels\HomeViewModel.cs" />
     <Compile Include="ViewsModels\MainViewModel.cs" />
+    <Compile Include="ViewsModels\UserInfoViewModel.cs" />
     <Compile Include="ViewsModels\UsersViewModel.cs" />
     <Compile Include="ViewsModels\ViewModelBase.cs" />
     <Compile Include="Views\HomeView.xaml.cs">
@@ -140,6 +142,9 @@
     </Compile>
     <Compile Include="Views\UserAdd.xaml.cs">
       <DependentUpon>UserAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserInfoView.xaml.cs">
+      <DependentUpon>UserInfoView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\UsersView.xaml.cs">
       <DependentUpon>UsersView.xaml</DependentUpon>
@@ -162,6 +167,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Views\UserAdd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserInfoView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

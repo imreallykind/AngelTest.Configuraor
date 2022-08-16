@@ -3,18 +3,42 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:AngelTest.Configurator.Views"
-      mc:Ignorable="d" 
+      xmlns:local="clr-namespace:AngelTest.Configurator.Views" xmlns:viewsmodels="clr-namespace:AngelTest.Configurator.ViewsModels" xmlns:models="clr-namespace:AngelTest.Configurator.Models" d:DataContext="{d:DesignInstance Type=viewsmodels:UsersViewModel}"
+              mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800">
 
     <Grid>
-        <Controls:Tile
+        <WrapPanel Orientation="Horizontal" VerticalAlignment="Center">
+            <Controls:Tile
             HorizontalTitleAlignment="Center"
             x:Name="AddTile"
             Controls:ControlsHelper.MouseOverBorderBrush="{DynamicResource MahApps.Brushes.ThemeForeground}"
             HorizontalAlignment="Left">
             <Controls:FontIcon FontSize="55" FontFamily ="Segoe MDL2 Assets" Glyph="&#xE710;" />
-        </Controls:Tile>
+            </Controls:Tile>
+            <ItemsControl ItemsSource="{Binding  Users}" HorizontalAlignment="Stretch"
+                             VerticalAlignment="Stretch">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Controls:Tile 
+                                HorizontalTitleAlignment="Center"
+                                Title="{Binding Path=Login}"
+                                Controls:ControlsHelper.MouseOverBorderBrush="{DynamicResource MahApps.Brushes.ThemeForeground}"
+                                HorizontalAlignment="Left"
+                                Command="{Binding NavigateUser}">
+                            <Controls:FontIcon FontSize="55" FontFamily ="Segoe MDL2 Assets" Glyph="&#xE77b;" />
+                        </Controls:Tile>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel Orientation="Horizontal" VerticalAlignment="Stretch" >
+                        </WrapPanel>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+            </ItemsControl>
+        </WrapPanel>
+
         <Controls:Tile
             HorizontalTitleAlignment="Center"
             x:Name="HomeTile"
